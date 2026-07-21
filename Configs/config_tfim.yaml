@@ -1,1 +1,12 @@
-
+title: run-tfim
+optimizer: adam # adam or minsr
+dh: 32 # hidden dimension
+N: 200 #number of sites N x N
+numsamples_per_batch: 50 #number of samples per batch for energy calculation
+batches: 1 # Calculation can be broken down into batches to avoid memory blow up
+numsamples_check: 5000 #numsamples at each checkpoint
+numsamples_final: 30000 # numsamples to evaluate energy after final step
+lr: 5e-4 # learning rate
+steps: 200000 #Maximum number of steps allows
+step_decay: 10000 #inverse decay rate lr = eta/(1+t/T)
+lambda_reg: 2e-3 # starting lambda reg [irrelevant for Adam]
