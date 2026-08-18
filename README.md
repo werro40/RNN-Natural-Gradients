@@ -34,6 +34,9 @@ For testing locally use [-t] flag
 
 ### Prerequisites
 
-
+To import packages run
+```
+pip install -r requirements.txt
+```
 
 
