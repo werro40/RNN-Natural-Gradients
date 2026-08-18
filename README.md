@@ -3,26 +3,6 @@ Repository to reproduce results in X.
 
 > *Comparing minSR and Adam on RNN Wavefunctions.*
 
----
-
-## 📌 Table of Contents
-
-- [About the Project](#-about-the-project)
-  - [Key Features](#key-features)
-  - [Built With](#built-with)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#-usage)
-- [Configuration](#%EF%B8%8F-configuration)
-- [API Reference](#-api-reference)
-- [Roadmap](#%EF%B8%8F-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
-- [Acknowledgments](#-acknowledgments)
-
----
 
 ## 🧐 About the Project
 
@@ -36,10 +16,7 @@ We include test of Adam vs minSR on four different hamiltoninans; 1D TFIM, 1D Cl
 
 ### Built With
 
-List the primary frameworks, libraries, languages, and tools used to build the project.
-
-- [Python](https://www.python.org/)
-- [Jax]
+Python, Jax, Flax
 
 
 ---
@@ -47,6 +24,10 @@ List the primary frameworks, libraries, languages, and tools used to build the p
 ## 🚀 Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+```
+python Scripts/Heisenberg2D.py --config=Configs/configs_h2d.yaml
+```
 
 ### Prerequisites
 
