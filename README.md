@@ -23,11 +23,14 @@ Python, Jax, Flax
 
 ## 🚀 Getting Started
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+To run the code use:
 
 ```
-python Scripts/Heisenberg2D.py --config=Configs/configs_h2d.yaml
+python Scripts/Heisenberg2D.py --config=Configs/configs_h2d.yaml [-t]
 ```
+
+For testing locally use [-t] flag
+
 
 ### Prerequisites
 
