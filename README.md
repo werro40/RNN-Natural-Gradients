@@ -1,5 +1,5 @@
 # RNN-Natural-Gradients
-Repository to reproduce results in X. 
+Repository to reproduce results in X. Under construction!
 
 > *Comparing minSR and Adam on RNN Wavefunctions.*
 
