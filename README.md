@@ -26,7 +26,7 @@ Python, Jax, Flax
 To run the code use:
 
 ```
-python Scripts/Heisenberg2D.py --config=Configs/configs_h2d.yaml [-t]
+python Scripts/Heisenberg2D.py 0 [-t]
 ```
 
 For testing locally use [-t] flag
@@ -34,6 +34,6 @@ For testing locally use [-t] flag
 
 ### Prerequisites
 
-List any software, tools, or dependencies required before installation.
+
 
 
