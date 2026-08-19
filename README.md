@@ -40,3 +40,6 @@ pip install -r requirements.txt
 ```
 
 
+### Acknowledgments
+
+Code was partially written with the help of AI tools.
