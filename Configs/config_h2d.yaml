@@ -1,14 +1,15 @@
-title: run-1
-optimizer: adam # adam or minsr
-dh: 200 # hidden dimension
+title: experiment
+opt: minsr # adam or minsr
 N: 10 #number of sites N x N
-numsamples_per_batch: 50 #number of samples per batch for energy calculation
-batches: 1 # Calculation can be broken down into batches to avoid memory blow up
-numsamples_check: 5000 #numsamples at each checkpoint
-numsamples_final: 30000 # numsamples to evaluate energy after final step
-lr: 5e-4 # learning rate
-steps: 200000 #Maximum number of steps allows
+batches: 1 # Calculation can be broken down sequentially into batches to avoid memory blow up
+samples_per_batch: 200 #number of samples per batch for local energy calculation
+dh: 200 # hidden dimension
+steps: 100000
+numsamples_final: 1000000 # numsamples to evaluate energy after final step
+numsamples_check: 10000 #numsamples at each checkpoint
+lr: 0.1 # learning rate
+m: 0.75 # momentum
 step_decay: 10000 #inverse decay rate lr = eta/(1+t/T)
-lambda_reg: 2e-3 # starting lambda reg [irrelevant for Adam]
-lambda_max: 0.1 # max lambda reg in LM heuristic [irrelevant for Adam]
-omega: 1.1 # lambda increease factor in LM heuristic [irrelevant for Adam]
+max_lambda: 0.1  # max lambda reg in LM heuristic [irrelevant for Adam]
+lambda_factor: 1.1  # lambda increease factor in LM heuristic [irrelevant for Adam]
+lambda_reg: 0.01  # starting lambda reg [irrelevant for Adam]
